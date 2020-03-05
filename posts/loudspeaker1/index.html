@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modeling and simulation of the electrodynamic loudspeaker | Antoine Falaize</title>
+<link href="../../assets/css/theme.css" type="text/css" rel="stylesheet">
+<link href="../../assets/css/pure.css" type="text/css" rel="stylesheet">
+<link href="../../assets/css/style.css" type="text/css" rel="stylesheet">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d5">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://afalaize.github.io/posts/loudspeaker1/">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Antoine Falaize">
+<link rel="prev" href="../falaize2019pod/" title="POD-ROM for flows induced by bodies in forced rotation" type="text/html">
+<link rel="next" href="../admos2019/" title="Interpolation of turbo-machinery POD-ROMs" type="text/html">
+<meta property="og:site_name" content="Antoine Falaize">
+<meta property="og:title" content="Modeling and simulation of the electrodynamic loudspeaker">
+<meta property="og:url" content="https://afalaize.github.io/posts/loudspeaker1/">
+<meta property="og:description" content="This is a companion page for the article Passive modelling of the electrodynamic loudspeaker: from the Thiele-Small model to nonlinear Port-Hamiltonian Systems
+submitted to the Acta-Acustica united wi">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-07-21T02:29:34+02:00">
+<meta property="article:tag" content="Eddy-currents">
+<meta property="article:tag" content="Loudspeaker">
+<meta property="article:tag" content="Magnetic">
+<meta property="article:tag" content="mathjax">
+<meta property="article:tag" content="Nonlinear">
+<meta property="article:tag" content="PHS">
+<meta property="article:tag" content="Viscoelastic">
+</head>
+<body>
+<div class="body_container">
+    <div id="header">
+        <div class="site-name">
+                <h1>Antoine Falaize</h1>
+        </div>
+
+        <div id="nav-menu">
+            <div class="bitcron_nav_container">
+                <div class="bitcron_nav">
+                    <div class="site_nav_wrap">
+                        <ul class="site_nav sm sm-base">
+<li><a href="../../pages/publications" class="nav__item">Publications</a></li>
+            <li><a href="../../index.html" class="nav__item">Posts</a></li>
+            <li><a href="../../categories/index.html" class="nav__item">Tags</a></li>
+            <li><a href="../../archive.html" class="nav__item">Archives</a></li>
+            <li><a href="../../pages/about-me" class="nav__item">About me</a></li>
+
+                            
+                        </ul>
+<div class="clear clear_nav_inline_end"></div>
+                    </div>
+                </div>
+                <div class="clear clear_nav_end"></div>
+            </div>
+        </div>
+    </div>
+    <div id="layout">
+        <div class="pure-g">
+            <div class=" pure-u-24-24 pure-u-sm-24-24 pure-u-md-18-24 pure_cell">
+                <div class="content_container">
+                    <!--Body content-->
+                    <div class="row">
+                        
+                        
+<div class="post post-page">
+    <h1 class="post-title">Modeling and simulation of the electrodynamic loudspeaker</h1>
+    <div class="post-meta">2018-07-21 02:29</div>
+    <div class="post-content">
+        <div>
+<p>This is a companion page for the article <strong>Passive modelling of the electrodynamic loudspeaker: from the Thiele-Small model to nonlinear Port-Hamiltonian Systems</strong>
+submitted to the <em>Acta-Acustica united with Acustica</em> on July 2018.</p>
+<div class="figure">
+<img alt="/images/loudspeaker2019.png" src="../../images/loudspeaker2019.png" style="width: 300px;">
+</div>
+<!-- TEASER_END: Read more -->
+<div class="section" id="abstrac">
+<h2>Abstrac</h2>
+<p>The electrodynamic loudspeaker couples mechanical, magnetic, electric and thermodynamic phenomena. The Thiele/Small (TS) model provides a low frequency approximation, combining passive linear (multi-physical or electric-equivalent) components. This is commonly used by manufacturers as a reference to specify basic parameters and characteristic transfer functions. This paper presents more refined nonlinear models of electric, magnetic and mechanical phenomena, for which fundamental properties such as passivity and causality are guaranteed.
+More precisely, multi-physical models of the driver are formulated in the core class of port-hamiltonian systems (PHS), which satisfies a power balance decomposed into conservative, dissipative and source parts.
+First, the TS model is reformulated as a linear PHS.
+Then, refinements are introduced, step-by-step, benefiting from the component-based approach allowed by the PHS formalism.
+Guaranteed-passive simulations are proposed, based on a numerical scheme that preserves the power balance.
+Numerical experiments are presented throughout the paper, for each refinement.
+They are in accordance with results in the literature.</p>
+</div>
+<div class="section" id="simulation-code">
+<h2>Simulation code</h2>
+<p>The resulting simulation code (Python 2.7) is available <a class="reference external" href="../../codes/python_loudspeaker_afalaize_Jul2018.zip">here</a>. All the results presented in the paper were obtained from this code.</p>
+</div>
+</div>
+    </div>
+    <div class="postpromonav">
+        <nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/eddy-currents/" rel="tag">Eddy-currents</a></li>
+            <li><a class="tag p-category" href="../../categories/loudspeaker/" rel="tag">Loudspeaker</a></li>
+            <li><a class="tag p-category" href="../../categories/magnetic/" rel="tag">Magnetic</a></li>
+            <li><a class="tag p-category" href="../../categories/nonlinear/" rel="tag">Nonlinear</a></li>
+            <li><a class="tag p-category" href="../../categories/phs/" rel="tag">PHS</a></li>
+            <li><a class="tag p-category" href="../../categories/viscoelastic/" rel="tag">Viscoelastic</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../falaize2019pod/" rel="prev" title="POD-ROM for flows induced by bodies in forced rotation">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../admos2019/" rel="next" title="Interpolation of turbo-machinery POD-ROMs">Next post</a>
+            </li>
+        </ul></nav>
+</div>
+    
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+</div>
+
+                </div>
+                <!--End of body content-->
+                <div style="clear:both;height:0;"></div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+
+        <div class=" pure-u-6-24 pure_cell">
+            <div id="sidebar">
+                <div class="widget">
+                    <div id="search_bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Contents © 2020         <a href="mailto:antoine.falaize@gmail.com">Antoine Falaize</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        
+    </div>
+
+    <!--FIXME: put these somewhere                            -->
+    <!--%if len(translations) > 1:-->
+    <!--<li>
+</li>-->
+    <!--%endif-->
+    <!--% if show_sourcelink:-->
+    <!--
+    <li>
+        <a href="/posts/loudspeaker1/index.rst" id="sourcelink">Source</a>
+    </li>
+-->
+    <!--%endif-->
+    <link href="../../assets/css/duoshuo.css" type="text/css" rel="stylesheet">
+<script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</div>
+</div>
+</body>
+</html>

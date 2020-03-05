@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulation of the Fender Rhodes | Antoine Falaize</title>
+<link href="../../assets/css/theme.css" type="text/css" rel="stylesheet">
+<link href="../../assets/css/pure.css" type="text/css" rel="stylesheet">
+<link href="../../assets/css/style.css" type="text/css" rel="stylesheet">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d5">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://afalaize.github.io/posts/rhodes/">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Antoine Falaize">
+<link rel="next" href="../analogcircuits/" title="Analog audio circuits" type="text/html">
+<meta property="og:site_name" content="Antoine Falaize">
+<meta property="og:title" content="Simulation of the Fender Rhodes">
+<meta property="og:url" content="https://afalaize.github.io/posts/rhodes/">
+<meta property="og:description" content="Article Antoine Falaize and Thomas Hélie. Passive simulation of the nonlinear port-hamiltonian modeling of a rhodes piano. Journal of Sound and Vibration, 2016.
+pdf
+bibtex
+
+    
+
+
+Parts under consider">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-10-13T12:38:29+02:00">
+<meta property="article:tag" content="Audio">
+<meta property="article:tag" content="Fender Rhodes">
+<meta property="article:tag" content="mathjax">
+<meta property="article:tag" content="PHS">
+<meta property="article:tag" content="Virtual Instrument">
+</head>
+<body>
+<div class="body_container">
+    <div id="header">
+        <div class="site-name">
+                <h1>Antoine Falaize</h1>
+        </div>
+
+        <div id="nav-menu">
+            <div class="bitcron_nav_container">
+                <div class="bitcron_nav">
+                    <div class="site_nav_wrap">
+                        <ul class="site_nav sm sm-base">
+<li><a href="../../pages/publications" class="nav__item">Publications</a></li>
+            <li><a href="../../index.html" class="nav__item">Posts</a></li>
+            <li><a href="../../categories/index.html" class="nav__item">Tags</a></li>
+            <li><a href="../../archive.html" class="nav__item">Archives</a></li>
+            <li><a href="../../pages/about-me" class="nav__item">About me</a></li>
+
+                            
+                        </ul>
+<div class="clear clear_nav_inline_end"></div>
+                    </div>
+                </div>
+                <div class="clear clear_nav_end"></div>
+            </div>
+        </div>
+    </div>
+    <div id="layout">
+        <div class="pure-g">
+            <div class=" pure-u-24-24 pure-u-sm-24-24 pure-u-md-18-24 pure_cell">
+                <div class="content_container">
+                    <!--Body content-->
+                    <div class="row">
+                        
+                        
+<div class="post post-page">
+    <h1 class="post-title">Simulation of the Fender Rhodes</h1>
+    <div class="post-meta">2015-10-13 12:38</div>
+    <div class="post-content">
+        <div>
+<p><strong>Article</strong> Antoine Falaize and Thomas Hélie. <a class="reference external" href="https://hal.archives-ouvertes.fr/hal-01470949/">Passive simulation of the nonlinear port-hamiltonian modeling of a rhodes piano</a>. Journal of Sound and Vibration, 2016.
+<a class="reference external" href="https://hal.archives-ouvertes.fr/hal-01390534/file/JSV_Rhodes_manuscript_round_2.pdf">pdf</a>
+<a class="reference external" href="https://hal.archives-ouvertes.fr/hal-01470949/bibtex">bibtex</a></p>
+<a title="By CasinoKat (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html), CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/) or CC BY-SA 2.5-2.0-1.0 (http://creativecommons.org/licenses/by-sa/2.5-2.0-1.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AFender_Rhodes.jpg">
+    <img width="300" alt="Fender Rhodes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Fender_Rhodes.jpg/512px-Fender_Rhodes.jpg"></a><!-- TEASER_END: Read more -->
+<div class="section" id="parts-under-consideration">
+<h2>Parts under consideration</h2>
+<div class="figure align-center">
+<img alt="/images/rhodes/rhodes6.jpg" src="../../images/rhodes/rhodes6.jpg" style="width: 500.0px;">
+</div>
+<p>The complete system is quite complex (38 components mentioned for each note in figure below). The resonator is an asymmetric tuning fork (elements 7 to 13 and 19 in the figure), where one of the prong is call the tine (element 13) and is struck by the hammer (elements 14 and 15), the other prong is called the tone bar (element 11). The constant magnetic induction field due to the pickup magnet in free air is modulated by the movement of the (magnetically conducting) tine, which results in a change of the magnetic flux in the coil, that generates an electromotive force (voltage) from Faraday's law of induction.</p>
+<div class="figure align-center">
+<img alt="/images/rhodes/rhodes_parts.png" src="../../images/rhodes/rhodes_parts.png" style="width: 500.0px;">
+</div>
+<p>This paper focuses on the part depicted in the figure below, from the hammer (excited by a force) to the pickup (producing an output voltage).</p>
+<div class="figure align-center">
+<img alt="/images/rhodes/rhodes_parts_sound_production.png" src="../../images/rhodes/rhodes_parts_sound_production.png" style="width: 500.0px;">
+</div>
+<p>In the paper, this part is simplified and modeled by three multi-physical elements (see figure below):</p>
+<ul class="simple">
+<li><p>a nonlinear hysteretic hammer <span class="math">\(\mathcal{H}\)</span>, with adjustable material characteristics and geometry,</p></li>
+<li><p>a linear damped cantilever beam <span class="math">\(\mathcal{B}\)</span>, which can be tuned according to the shape and material properties,</p></li>
+<li><p>a nonlinear pickup <span class="math">\(\mathcal{P}\)</span>, the transverse and longitudinal position of which can be adjusted compared to the free-end beam extremity, which is connected to a RC analog filter (not represented in the figure below).</p></li>
+</ul>
+<p>The technical details about the modeling of each part and the construction of the complete model are given in the paper.</p>
+<div class="figure align-center">
+<img alt="/images/rhodes/Schematic_new.png" src="../../images/rhodes/Schematic_new.png" style="width: 400.0px;">
+</div>
+</div>
+<div class="section" id="simulation-code">
+<h2>Simulation code</h2>
+<p>The resulting simulation code (Python 2.7) is available <a class="reference external" href="../../codes/code_rhodes_falaize.zip">here</a> (the script to be executed is 'MAIN.py'). All the results presented in the paper and in the sequel of this web page were obtained from this code. Notice the tuning of physical parameters may differ from the parameters specified in the paper, which correspond to the case note A440, with contant damping coefficient.</p>
+</div>
+<div class="section" id="comparison-with-measurements">
+<h2>Comparison with measurements</h2>
+<p>Here we compare the simulated output (labeled <cite>simulation</cite>) to measurements provided by <a class="reference external" href="http://www.uvi.net/fr/">UVI</a> (labeled <cite>measure</cite>) for note A4 (440Hz) with increasing force applied to the hammer.</p>
+<div class="figure align-center">
+<img alt="/images/rhodes/ALLspectrum100.png" src="../../images/rhodes/ALLspectrum100.png" style="width: 600.0px;">
+</div>
+<div class="figure align-center">
+<img alt="/images/rhodes/test1.png" src="../../images/rhodes/test1.png" style="width: 600.0px;">
+</div>
+<div class="figure align-center">
+<img alt="/images/rhodes/test4.png" src="../../images/rhodes/test4.png" style="width: 600.0px;">
+</div>
+<div class="figure align-center">
+<img alt="/images/rhodes/test7.png" src="../../images/rhodes/test7.png" style="width: 600.0px;">
+</div>
+</div>
+<div class="section" id="audio-examples">
+<h2>Audio examples</h2>
+<p>Below we give some audio results obtained from the aforementioned modeling and numerical simulation. Each example is made of successive hammer hits with increasing force amplitude. Results are given for A1 (55Hz), A2 (110Hz), A3 (220Hz) and A4 (440Hz).</p>
+<dl>
+<dt>55Hz</dt>
+<dd><audio controls><source src="../../sounds/rhodes/rhodes_test_55.mp3"></source></audio></dd>
+<dt>110Hz</dt>
+<dd><audio controls><source src="../../sounds/rhodes/rhodes_test_110.mp3"></source></audio></dd>
+<dt>220Hz</dt>
+<dd><audio controls><source src="../../sounds/rhodes/rhodes_test_220.mp3"></source></audio></dd>
+<dt>440Hz</dt>
+<dd><audio controls><source src="../../sounds/rhodes/rhodes_test_440.mp3"></source></audio></dd>
+</dl>
+</div>
+<div class="section" id="positioning-the-pickup">
+<h2>Positioning the pickup</h2>
+<p>Below are audio examples that show the effects of the positioning of the tine with respect to the pickup.</p>
+<hr class="docutils">
+<p>Increasing the distance between the pickup and the beam.</p>
+<div class="figure align-right">
+<img alt="/images/rhodes/tinePosition2.png" src="../../images/rhodes/tinePosition2.png" style="width: 400.0px;">
+</div>
+<div class="figure align-right">
+<img alt="/images/rhodes/lh.png" src="../../images/rhodes/lh.png" style="width: 400.0px;">
+</div>
+<p><span class="math">\(l_p=0.5mm\)</span></p>
+<audio controls><source src="../../sounds/rhodes/lp_0.0005.mp3"></source></audio> (Too close)<p><span class="math">\(l_p=1.5mm\)</span></p>
+<audio controls><source src="../../sounds/rhodes/lp_0.0015.mp3"></source></audio> (Ideal)<p><span class="math">\(l_p=3mm\)</span></p>
+<audio controls><source src="../../sounds/rhodes/lp_0.003.mp3"></source></audio> (Low volume)<hr class="docutils">
+<p>Displacing the pickup from the beam's axis.</p>
+<div class="figure align-right">
+<img alt="/images/rhodes/tinePosition1.png" src="../../images/rhodes/tinePosition1.png" style="width: 400.0px;">
+</div>
+<div class="figure align-right">
+<img alt="/images/rhodes/dlh.png" src="../../images/rhodes/dlh.png" style="width: 400.0px;">
+</div>
+<dl>
+<dt><span class="math">\(l_\delta=0mm\)</span></dt>
+<dd>
+<audio controls><source src="../../sounds/rhodes/dlp_0.mp3"></source></audio> (Pure overtone)</dd>
+<dt><span class="math">\(l_\delta=0.5mm\)</span></dt>
+<dd>
+<audio controls><source src="../../sounds/rhodes/dlp0.0005.mp3"></source></audio> (Ideal)</dd>
+<dt><span class="math">\(l_\delta=1.5mm\)</span></dt>
+<dd>
+<audio controls><source src="../../sounds/rhodes/dlp0.0015.mp3"></source></audio> (Pure Tone)</dd>
+</dl>
+</div>
+</div>
+    </div>
+    <div class="postpromonav">
+        <nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/audio/" rel="tag">Audio</a></li>
+            <li><a class="tag p-category" href="../../categories/fender-rhodes/" rel="tag">Fender Rhodes</a></li>
+            <li><a class="tag p-category" href="../../categories/phs/" rel="tag">PHS</a></li>
+            <li><a class="tag p-category" href="../../categories/virtual-instrument/" rel="tag">Virtual Instrument</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="next">
+                <a href="../analogcircuits/" rel="next" title="Analog audio circuits">Next post</a>
+            </li>
+        </ul></nav>
+</div>
+    
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+</div>
+
+                </div>
+                <!--End of body content-->
+                <div style="clear:both;height:0;"></div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+
+        <div class=" pure-u-6-24 pure_cell">
+            <div id="sidebar">
+                <div class="widget">
+                    <div id="search_bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Contents © 2020         <a href="mailto:antoine.falaize@gmail.com">Antoine Falaize</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        
+    </div>
+
+    <!--FIXME: put these somewhere                            -->
+    <!--%if len(translations) > 1:-->
+    <!--<li>
+</li>-->
+    <!--%endif-->
+    <!--% if show_sourcelink:-->
+    <!--
+    <li>
+        <a href="/posts/rhodes/index.rst" id="sourcelink">Source</a>
+    </li>
+-->
+    <!--%endif-->
+    <link href="../../assets/css/duoshuo.css" type="text/css" rel="stylesheet">
+<script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</div>
+</div>
+</body>
+</html>
