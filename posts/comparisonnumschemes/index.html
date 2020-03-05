@@ -118,14 +118,14 @@ Discrete gradient method">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>  <span class="c1"># Symbolic computation module</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>  <span class="c1"># Numerical computation module</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="k">import</span> <span class="n">root</span>  <span class="c1"># Solver for implicit functions</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">root</span>  <span class="c1"># Solver for implicit functions</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  <span class="c1"># Figures rendering</span>
 <span class="c1"># Figures rendering inline</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">set_matplotlib_formats</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">set_matplotlib_formats</span>
 <span class="n">set_matplotlib_formats</span><span class="p">(</span><span class="s1">'png'</span><span class="p">,</span> <span class="s1">'pdf'</span><span class="p">)</span>
 <span class="c1"># Latex outputs</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">init_printing</span>
+<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">init_printing</span>
 <span class="n">init_printing</span><span class="p">(</span><span class="n">use_latex</span><span class="o">=</span><span class="s1">'mathjax'</span><span class="p">)</span>
 </pre></div>
 
@@ -558,7 +558,7 @@ $$\left[\begin{matrix}0 &amp; -1\\1 &amp; 0\end{matrix}\right]$$
     <span class="sd">'''</span>
 <span class="sd">    Plot the surface H(x1, x2).</span>
 <span class="sd">    axe is a 3D matplotlib.pyplot.axes (x1, x2, H) for -limsx1&lt;x1&lt;limsx1, -limsx2&lt;x2&lt;limsx2."'''</span>
-    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="k">import</span> <span class="n">cm</span>
+    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">cm</span>
     <span class="n">npplot</span> <span class="o">=</span> <span class="mi">200</span>
     <span class="n">xp1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">lims</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">lims</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">npplot</span><span class="p">)</span>
     <span class="n">xp2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">lims</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">lims</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">npplot</span><span class="p">)</span>
@@ -572,7 +572,7 @@ $$\left[\begin{matrix}0 &amp; -1\\1 &amp; 0\end{matrix}\right]$$
 
 <span class="k">def</span> <span class="nf">plot_traj_3D</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="s2">" 3D plot of energy and the given state trajectory, with state space as base"</span>
-    <span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="k">import</span> <span class="n">Axes3D</span>
+    <span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
     <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
     <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">'3d'</span><span class="p">)</span>
     <span class="n">plot_H_surface</span><span class="p">(</span><span class="n">ax</span><span class="p">)</span>    
@@ -598,7 +598,7 @@ $$\left[\begin{matrix}0 &amp; -1\\1 &amp; 0\end{matrix}\right]$$
     <span class="sd">'''</span>
 <span class="sd">    Plot the surface H(x1, x2).</span>
 <span class="sd">    axe is a 3D matplotlib.pyplot.axes (x1, x2, H) for -limsx1&lt;x1&lt;limsx1, -limsx2&lt;x2&lt;limsx2."'''</span>
-    <span class="kn">from</span> <span class="nn">pylab</span> <span class="k">import</span> <span class="n">contourf</span>
+    <span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="n">contourf</span>
     <span class="n">Nticks</span> <span class="o">=</span> <span class="mf">100.</span>
     <span class="n">axe_x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">lims</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">lims</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">Nticks</span><span class="p">)</span>
     <span class="n">axe_x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">lims</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">lims</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">Nticks</span><span class="p">)</span>
@@ -608,7 +608,7 @@ $$\left[\begin{matrix}0 &amp; -1\\1 &amp; 0\end{matrix}\right]$$
     <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="n">NLevels</span> <span class="o">=</span> <span class="mi">30</span>
     <span class="n">linestyles</span> <span class="o">=</span> <span class="s1">'dash'</span>
-    <span class="kn">from</span> <span class="nn">pylab</span> <span class="k">import</span> <span class="n">contourf</span>
+    <span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="n">contourf</span>
     <span class="n">contourf</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> 
              <span class="n">NLevels</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">linestyles</span><span class="o">=</span><span class="n">linestyles</span> <span class="p">,</span> <span class="n">antialiased</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>  <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">)</span>
 
@@ -1111,7 +1111,7 @@ $$\left[\begin{matrix}0 &amp; -1\\1 &amp; 0\end{matrix}\right]$$
 <div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="k">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">tight_layout</span><span class="p">,</span> <span class="n">savefig</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">tight_layout</span><span class="p">,</span> <span class="n">savefig</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">figure</span><span class="p">()</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
