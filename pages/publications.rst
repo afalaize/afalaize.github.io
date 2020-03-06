@@ -15,7 +15,11 @@ The complete set of my references in HAL is given at the end of this page.
 Articles
 --------
 
-Antoine Falaize, Erwan Liberge and Aziz Hamdouni `POD-based reduced order model for flows induced by rigid bodies in forced rotation <https://hal.archives-ouvertes.fr/hal-01874892v3>`_. Journal of Fluids and Structure, 2019.
+Antoine Falaize and Thomas Hélie. `Passive modelling of the electrodynamic loudspeaker: from the Thiele–Small model to nonlinear port-Hamiltonian systems <https://acta-acustica.edpsciences.org/articles/aacus/abs/2020/01/aacus190001s/aacus190001s.html>`_. Acta Acustica, 4-1 (1), 2020.
+`pdf <https://acta-acustica.edpsciences.org/articles/aacus/pdf/2020/01/aacus190001s.pdf>`__
+`bibtex <https://hal.archives-ouvertes.fr/hal-02496422v1/bibtex>`__
+
+Antoine Falaize, Erwan Liberge and Aziz Hamdouni. `POD-based reduced order model for flows induced by rigid bodies in forced rotation <https://hal.archives-ouvertes.fr/hal-01874892v3>`_. Journal of Fluids and Structure, 2019.
 `pdf <https://hal.archives-ouvertes.fr/hal-01874892v3/document>`__
 `bibtex <https://hal.archives-ouvertes.fr/hal-01874892v3/bibtex>`__
 

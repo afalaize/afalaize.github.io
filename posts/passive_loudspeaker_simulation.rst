@@ -1,6 +1,6 @@
 .. title: Modeling and simulation of the electrodynamic loudspeaker
 .. slug: loudspeaker1
-.. date: 2018-07-21 02:29:34 UTC+02:00
+.. date: 2020-02-28 07:32:46 UTC+02:00
 .. tags: mathjax, PHS, Loudspeaker, Nonlinear, Magnetic, Eddy-currents, Viscoelastic
 .. category: Article
 .. link:
@@ -8,15 +8,18 @@
 .. type: text
 .. author: Antoine Falaize
 
+**Article** Antoine Falaize and Thomas Hélie. `Passive modelling of the electrodynamic loudspeaker: from the Thiele–Small model to nonlinear port-Hamiltonian systems <https://acta-acustica.edpsciences.org/articles/aacus/abs/2020/01/aacus190001s/aacus190001s.html>`_. Acta Acustica, 4-1 (1), 2020.
+`pdf <https://acta-acustica.edpsciences.org/articles/aacus/pdf/2020/01/aacus190001s.pdf>`__
+`bibtex <https://hal.archives-ouvertes.fr/hal-02496422v1/bibtex>`__
+
+.. figure:: /images/loudspeaker2019.png
+    :width: 200px
+
+.. TEASER_END: Read more
+
 This is a companion page for the article **Passive modelling of the electrodynamic loudspeaker: from the Thiele-Small model to nonlinear Port-Hamiltonian Systems**
 submitted to the *Acta-Acustica united with Acustica* on July 2018.
 
-
-.. figure:: /images/loudspeaker2019.png
-    :width: 300px
-
-
-.. TEASER_END: Read more
 
 Abstrac
 -----------------
