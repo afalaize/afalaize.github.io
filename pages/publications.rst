@@ -15,6 +15,10 @@ The complete set of my references in HAL is given at the end of this page.
 Articles
 --------
 
+Rolando Mosquera, Abdallah El Hamidi, Aziz Hamdouni, Antoine Falaize, `Generalization of the Neville–Aitken interpolation algorithm on Grassmann manifolds: Applications to reduced order model <https://doi.org/10.1002/fld.4981>`__. Int J Numer Meth Fluids. 2021; 1– 23.
+`pdf <https://arxiv.org/pdf/1907.02831.pdf>`__
+`bibtex <https://onlinelibrary.wiley.com/action/showCitFormats?doi=10.1002%2Ffld.4981>`__
+
 Antoine Falaize and Thomas Hélie. `Passive modelling of the electrodynamic loudspeaker: from the Thiele–Small model to nonlinear port-Hamiltonian systems <https://acta-acustica.edpsciences.org/articles/aacus/abs/2020/01/aacus190001s/aacus190001s.html>`_. Acta Acustica, 4-1 (1), 2020.
 `pdf <https://acta-acustica.edpsciences.org/articles/aacus/pdf/2020/01/aacus190001s.pdf>`__
 `bibtex <https://hal.archives-ouvertes.fr/hal-02496422v1/bibtex>`__

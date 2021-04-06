@@ -26,7 +26,7 @@ SITE_URL = "https://afalaize.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://afalaize.github.io/"
 BLOG_EMAIL = "antoine.falaize@gmail.com"
-BLOG_DESCRIPTION = "This website depicts the research of A. Falaize the modelisation, the simulation and the correction of multiphysical systems."  # (translatable)
+BLOG_DESCRIPTION = "Professional page of Antoine Falaize (PhD)"  # (translatable)
 
 # Nikola is multilingual!
 #
