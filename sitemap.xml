@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://afalaize.github.io/</loc>
-  <lastmod>2020-03-05T23:57:00Z</lastmod>
+  <lastmod>2021-04-06T10:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://afalaize.github.io/2015/</loc>
@@ -34,12 +34,16 @@
   <lastmod>2020-03-05T23:57:00Z</lastmod>
  </url>
  <url>
+  <loc>https://afalaize.github.io/2021/</loc>
+  <lastmod>2021-04-06T10:07:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://afalaize.github.io/archive.html</loc>
-  <lastmod>2020-03-05T23:57:00Z</lastmod>
+  <lastmod>2021-04-06T10:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://afalaize.github.io/categories/</loc>
-  <lastmod>2020-03-05T23:32:00Z</lastmod>
+  <lastmod>2021-04-06T10:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://afalaize.github.io/categories/audio/</loc>
@@ -114,6 +118,14 @@
   <lastmod>2020-03-05T23:32:00Z</lastmod>
  </url>
  <url>
+  <loc>https://afalaize.github.io/categories/mechanics/</loc>
+  <lastmod>2021-04-06T10:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://afalaize.github.io/categories/musical-acoustics/</loc>
+  <lastmod>2021-04-06T10:07:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://afalaize.github.io/categories/nonlinear/</loc>
   <lastmod>2020-03-05T23:32:00Z</lastmod>
  </url>
@@ -167,7 +179,7 @@
  </url>
  <url>
   <loc>https://afalaize.github.io/index-1.html</loc>
-  <lastmod>2020-03-05T23:32:00Z</lastmod>
+  <lastmod>2021-04-06T10:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://afalaize.github.io/pages/about-me/</loc>
@@ -198,6 +210,10 @@
   <lastmod>2020-03-05T23:32:00Z</lastmod>
  </url>
  <url>
+  <loc>https://afalaize.github.io/posts/gdrgdm2020/</loc>
+  <lastmod>2021-04-06T10:19:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://afalaize.github.io/posts/introgitpypi/</loc>
   <lastmod>2020-03-05T23:32:00Z</lastmod>
  </url>
@@ -208,6 +224,10 @@
  <url>
   <loc>https://afalaize.github.io/posts/loudspeaker1/</loc>
   <lastmod>2020-03-05T23:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://afalaize.github.io/posts/nodyconfriction/</loc>
+  <lastmod>2021-04-06T10:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://afalaize.github.io/posts/pyphs-seminar/</loc>
